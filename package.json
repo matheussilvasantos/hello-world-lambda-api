@@ -4,5 +4,9 @@
   "description": "Learning Serverless Framework",
   "main": "index.js",
   "author": "Matheus Silva Santos de Oliveira",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "serverless-http": "^1.9.1"
+  }
 }
