@@ -1,0 +1,8 @@
+{
+  "name": "hello-world-express-api",
+  "version": "1.0.0",
+  "description": "Learning Serverless Framework",
+  "main": "index.js",
+  "author": "Matheus Silva Santos de Oliveira",
+  "license": "ISC"
+}
