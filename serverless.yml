@@ -2,9 +2,6 @@
 
 service: hello-world-express-api
 
-custom:
-  tableName: 'users-table-${self:provider.stage}'
-
 provider:
   name: aws
   runtime: nodejs6.10
@@ -47,3 +44,13 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: ${self:custom.tableName}
+
+plugins:
+  - serverless-dynamodb-local
+  - serverless-offline
+
+custom:
+  tableName: 'users-table-${self:provider.stage}'
+  dynamodb:
+    start:
+      migrate: true
